@@ -1,0 +1,100 @@
+/* --------------------- Open Props --------------------------- */
+
+/* the props */
+@import "https://unpkg.com/open-props";
+
+/* optional imports that use the props */
+@import "https://unpkg.com/open-props/normalize.min.css";
+@import "https://unpkg.com/open-props/buttons.min.css";
+
+/* ------------------------------------------------------------ */
+
+/* screens */
+$w-mobile: 375px;
+$desktop: 1440px;
+
+/* colors */
+$green: hsl(75, 95%, 57%);
+$white: #fff;
+$grey-700: hsl(0, 0%, 20%);
+$grey-800: hsl(0, 0%, 12%);
+$grey-900: hsl(0, 0%, 8%);
+
+/* typography */
+$p-size: 14px;
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-face-name: Inter;
+  src: url("assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+body {
+  font-family: Inter, sans-serif;
+  font-size: $p-size;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: $grey-900;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  width: 95%;
+  background-color: $grey-800;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.header-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+img {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  margin: 1rem;
+}
+
+.header-container>h1{
+  font-size: 2rem;
+}
+
+.header-container>h2{
+  font-size: 1.2rem;
+  color: $green;
+}
+
+.buttons-container {
+  padding: 1rem;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ align-content: center;
+  gap: 1rem;
+}
+
+button{
+  width: 100%;
+  border: none;
+  background-color: $grey-700;
+  padding: .8rem 1rem;
+}
