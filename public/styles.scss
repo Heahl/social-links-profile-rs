@@ -97,9 +97,11 @@ button{
   border: none;
   background-color: $grey-700;
   padding: .8rem 1rem;
+  transition: background-color .2s ease;
 }
 
 button:hover{
   background-color: $green;
   cursor: pointer;
+  color: $grey-900;
 }
