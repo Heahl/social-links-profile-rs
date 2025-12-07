@@ -98,3 +98,8 @@ button{
   background-color: $grey-700;
   padding: .8rem 1rem;
 }
+
+button:hover{
+  background-color: $green;
+  cursor: pointer;
+}
