@@ -98,10 +98,11 @@ button{
   background-color: $grey-700;
   padding: .8rem 1rem;
   transition: background-color .2s ease;
+  letter-spacing: .15rem;
 }
 
 button:hover{
   background-color: $green;
   cursor: pointer;
-  color: $grey-900;
+  color: $grey-800;
 }
